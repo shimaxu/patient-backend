@@ -27,8 +27,7 @@ class PatientFactory extends Factory
         return [
             'name' => $this->faker->unique()->name(),
             'dob' => $this->faker->date('Y-m-d', now()),
-            'nid' => 'A'. $this->faker->unique()->randomNumber(5, true),
-            'address_id' => $this->faker->numberBetween(1, 5)
+            'nid' => 'A'. $this->faker->unique()->randomNumber(6, true),
         ];
     }
 }
